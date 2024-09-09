@@ -11,7 +11,7 @@ const QuitButton = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <button onClick={handleQuit} className="bg-green-500 text-white font-bold py-2 px-4 rounded w-40 text-center">
+      <button onClick={handleQuit} className="bg-red-600 text-white font-bold py-2 px-4 rounded w-40 text-center">
         Quit
       </button>
     </div>
