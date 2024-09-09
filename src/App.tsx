@@ -9,9 +9,9 @@ import ScoresBtn from './components/ScoresBtn';
 
 const HomeScreen = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
-      <h1 className="text-3xl text-black mb-8 text-center">
-        Tetris
+    <div className="h-screen flex flex-col justify-center items-center play-container">
+      <h1 className="text-3xl text-white mb-8 text-center cosmic-glow">
+        Space Tetris
       </h1>
       <div className="flex justify-between space-x-4">
       <PlayButton />

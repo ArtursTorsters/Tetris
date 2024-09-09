@@ -7,9 +7,30 @@
 body {
   background-color: #788091;
 }
-
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: cyan;
+}
 .play-container {
   background-image: url('./img/bg.png');
   background-size: cover;
   background-position: center;
+}
+.special-border{
+  border: cyan 3px solid;
+  box-shadow: cyan 0px 0px 50px;
+}
+.cosmic-glow {
+  position: relative;
+  display: inline-block;
+  color: #ffffff; /* Text color */
+  text-shadow: 
+    0 0 5px #00FFFF, 
+    0 0 10px #00FFFF, 
+    0 0 15px #00FFFF, 
+    0 0 20px #00FFFF, 
+    0 0 25px #00FFFF, 
+    0 0 30px #00FFFF, 
+    0 0 35px #00FFFF; /* Glowing effect */
 }
