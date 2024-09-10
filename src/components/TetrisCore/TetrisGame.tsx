@@ -98,15 +98,13 @@ const TetrisGame: React.FC<TetrisGameProps> = ({ setScore }) => {
     // if lines ar complete
     const newScore = grid.reduce((score, row) => {
       if (row.every((value) => value !== 0)) {
-        const audio = new Audio("/audio/clear.mp3");
-        audio.volume = 0.9;
-
-        audio.play();
-
+     
         // Clear line and move rows down
         newGrid.unshift(Array(gridWidth).fill(0));
         newGrid.pop();
-
+        const audio = new Audio("/audio/clear.mp3");
+        audio.volume = 0.9;
+        audio.play();
         score += 100; // if line completed add 100 points
       }
       return score;
@@ -126,9 +124,7 @@ const TetrisGame: React.FC<TetrisGameProps> = ({ setScore }) => {
     } else {
       const audio = new Audio("/audio/block.mp3");
       audio.volume = 0.4;
-
       audio.play();
-
       lockTetromino();
     }
   };
