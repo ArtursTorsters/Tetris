@@ -1,12 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
+import { useNavigate } from 'react-router-dom';
 import TetrisGame from './TetrisCore/TetrisGame'; // Import your Tetris game component
 import QuitButton from './QuitButton';
 
 const PlayScreen: React.FC = () => {
   const [playerName, setPlayerName] = useState<string>('');
   const [score, setScore] = useState<number>(0);
+  const navigate = useNavigate();
 
+// audio
+// const handlePlay = () => {
+//   // play music
+//   const audio = new Audio("/audio/surd.mp3");
+//   audio.loop = true
+//   audio.volume = 0.3
+//   audio.play()
+// // if(navigate(-1)) {
+// //   return "bac"
+// //   audio.pause()
+// // }
 
+//   navigate('/PlayScreen');
+// };
 
 
 
@@ -56,7 +71,7 @@ const PlayScreen: React.FC = () => {
         <TetrisGame setScore={setScore} />
       </div>
 
-      <QuitButton />
+      <QuitButton  />
     </div>
   );
 };

@@ -4,9 +4,11 @@ import { useNavigate } from 'react-router-dom';
 const QuitButton = () => {
 
     const navigate = useNavigate();
+    const audio = new Audio("/audio/surd.mp3");
 
     const handleQuit = () => {
       navigate('/')  // to play screen
+      audio.pause()
     };
 
   return (
